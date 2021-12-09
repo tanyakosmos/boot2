@@ -1,0 +1,46 @@
+.container {
+    display: grid;
+    grid-template-areas: 
+                            "header nav sidebar"
+                            "header content1 content1"
+                            "header row1 row2"
+                            "header content2 content2"
+                            "header footer footer"; 
+    grid-gap: 10px;
+    grid-template-columns: 16% 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;                         
+}
+.sidebar{
+    background-color: crimson;
+    grid-area: sidebar;
+}
+.header{
+    background-color: darkgreen;
+    grid-area: header;
+    height: 200px;
+}
+.content1{
+    background-color: darkorange;
+    grid-area: content1;
+}
+.footer{
+    background-color: deepskyblue;
+    grid-area: footer;
+}
+.content2{
+    background-color: darksalmon;
+    grid-area: content2;
+}
+.row1{
+    background-color: aquamarine;
+    grid-area: row1;
+}
+.row2{
+    background-color: blueviolet;
+    grid-area: row2;
+}
+.nav{
+    background-color: greenyellow;
+    grid-area: nav;
+}
+
